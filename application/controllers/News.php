@@ -96,7 +96,7 @@ class News extends CI_Controller {
     public function delete()
     {
         $id = $this->uri->segment(3);
-        
+        $name=$id;
         if (empty($id))
         {
             show_404();
